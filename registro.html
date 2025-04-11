@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Almacén de Abarrotes el abuelo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido al Almacén de Artículos</h1>
+    <p>Gestiona el registro y almacenamiento de tus artículos.</p>
+</header>
+
+<div class="container">
+    <div class="add-item-form">
+        <h2>Agregar Artículo</h2>
+        <form id="add-item-form">
+            <label for="item-id">ID del Artículo:</label>
+            <input type="text" id="item-id" required>
+            
+            <label for="item-description">Descripción:</label>
+            <textarea id="item-description" required></textarea>
+            
+            <label for="item-image">Imagen URL:</label>
+            <input type="url" id="item-image" required>
+            
+            <button type="submit">Agregar Artículo</button>
+        </form>
+    </div>
+    
+    <div class="item-list">
+        <h2>Artículos Registrados</h2>
+        <ul id="item-list">
+            <li><em>No hay artículos registrados.</em></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Almacén de Artículos. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
